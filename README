@@ -1,0 +1,10 @@
+Commandes utiles reprepro
+
+Mode verbose : -V
+Mettre à jour les dists : reprepro -Vb . export
+Mettre à jour les dépôts : reprepro -Vb . update
+Pull des paquets d'un dépôt vers un autre en fonction du fichier pull : reprepro -Vb . pull
+Supprimer un paquet : reprepro -Vb . remove dists paquet (exemple reprepro -Vb . remove kaisen-rolling kaisen-mate)
+Ajouter un paquet avec ses sources : reprepro -Vb . include dists paquet (exemple reprepro -Vb . include kaisen-rolling *.changes)
+Ajouter un paquet seul : reprepro -Vb . includedeb dists paquet (exemple reprepro -Vb . includedeb kaisen-rolling *.deb)
+Ajouter des sources seules : reprepro -Vb . includedsc dists paquet (exemple reprepro -Vb . includedsc kaisen-rolling *.dsc)
