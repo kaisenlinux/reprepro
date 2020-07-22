@@ -74,3 +74,4 @@ live-config					deinstall
 live-config-doc					deinstall
 live-config-systemd				deinstall
 live-config-sysvinit				deinstall
+live-installer					deinstall
