@@ -1,0 +1,5 @@
+basedir /home/kaisen/deb
+dbdir /home/kaisen/deb/db
+confdir /home/kaisen/deb/conf
+distdir /home/kaisen/deb/dists
+listdir /home/kaisen/deb/lists
