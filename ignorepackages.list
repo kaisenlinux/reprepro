@@ -75,3 +75,11 @@ live-config-doc					deinstall
 live-config-systemd				deinstall
 live-config-sysvinit				deinstall
 live-installer					deinstall
+lightdm-gtk-greeter				deinstall
+conky						deinstall
+conky-all					deinstall
+conky-all-dbg					deinstall
+conky-cli					deinstall
+conky-cli-dbg					deinstall
+conky-std					deinstall
+conky-std-dbg					deinstall
