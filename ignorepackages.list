@@ -74,7 +74,6 @@ live-config					deinstall
 live-config-doc					deinstall
 live-config-systemd				deinstall
 live-config-sysvinit				deinstall
-live-installer					deinstall
 lightdm-gtk-greeter				deinstall
 conky						deinstall
 conky-all					deinstall
@@ -83,3 +82,8 @@ conky-cli					deinstall
 conky-cli-dbg					deinstall
 conky-std					deinstall
 conky-std-dbg					deinstall
+py-cpuinfo					deinstall
+python3-cpuinfo					deinstall
+python3-sentry-sdk				deinstall
+vpcs						deinstall
+live-installer					deinstall
