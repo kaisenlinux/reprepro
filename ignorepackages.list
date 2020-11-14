@@ -86,4 +86,3 @@ py-cpuinfo					deinstall
 python3-cpuinfo					deinstall
 python3-sentry-sdk				deinstall
 vpcs						deinstall
-live-installer					deinstall
