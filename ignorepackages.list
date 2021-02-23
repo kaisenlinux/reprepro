@@ -3,6 +3,7 @@ base-files					deinstall
 cron						deinstall
 desktop-base					deinstall
 debootstrap					deinstall
+debootstrap-udeb				deinstall
 login-dbgsym					deinstall
 login						deinstall
 passwd-dbgsym					deinstall
