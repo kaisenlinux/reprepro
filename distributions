@@ -4,7 +4,7 @@ Suite: kaisen-rolling
 Codename: kaisen-rolling
 Version: rolling
 Update: - testing testing-updates testing-security
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 Components: main contrib non-free
 UDebComponents: main contrib non-free
 DscIndices: Sources Release .gz
@@ -20,7 +20,7 @@ Label: Kaisen Linux Devel
 Suite: kaisen-devel
 Codename: kaisen-devel
 Version: devel
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 Components: main contrib non-free
 UDebComponents: main contrib non-free
 DscIndices: Sources Release .gz
@@ -36,7 +36,7 @@ Label: Kaisen Linux Packages
 Suite: kaisen-packages
 Codename: kaisen-packages
 Version: packages
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 Components: main contrib non-free
 UDebComponents: main contrib non-free
 DscIndices: Sources Release .gz
@@ -51,7 +51,7 @@ Label: Kaisen Linux Testing
 Suite: kaisen-testing
 Codename: kaisen-testing
 Version: testing
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 Components: main contrib non-free
 UDebComponents: main contrib non-free
 DscIndices: Sources Release .gz
@@ -59,4 +59,19 @@ DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
 Contents:
 Description: Kaisen Linux Testing Environment 
+SignWith: 018D0A59B75A9CD8
+
+Origin: Kaisen Linux Rolling Snapshot
+Label: Kaisen Linux Rolling Snapshot
+Suite: kaisen-rolling-snapshot
+Codename: kaisen-rolling-snapshot
+Version: snapshot
+Architectures: i386 amd64 arm64 source
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+DscIndices: Sources Release .gz
+DebIndices: Packages Release . .gz
+UDebIndices: Packages . .gz
+Contents:
+Description: Kaisen Linux Rolling Snapshot
 SignWith: 018D0A59B75A9CD8

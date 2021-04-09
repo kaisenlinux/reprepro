@@ -4,9 +4,9 @@ Suite: testing
 DownloadListsAs: .gz .xz
 Components: main contrib non-free
 UDebComponents: main contrib non-free
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 FilterList: install ignorepackages.list
-FilterFormula: $Source (!=linux),$Source (!=linux-signed-amd64),$Source (!=linux-signed-i386)
+FilterFormula: $Source (!=linux),$Source (!=linux-signed-amd64),$Source (!=linux-signed-i386),$Source (!=linux-signed-arm64)
 
 Name: testing-updates
 Method: http://ftp.debian.org/debian/
@@ -14,9 +14,9 @@ Suite: testing-updates
 DownloadListsAs: .gz .xz
 Components: main contrib non-free
 UDebComponents: main contrib non-free
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 FilterList: install ignorepackages.list
-FilterFormula: $Source (!=linux),$Source (!=linux-signed-amd64),$Source (!=linux-signed-i386)
+FilterFormula: $Source (!=linux),$Source (!=linux-signed-amd64),$Source (!=linux-signed-i386),$Source (!=linux-signed-arm64)
 
 Name: testing-security
 Method: http://security.debian.org/debian-security
@@ -24,6 +24,6 @@ Suite: testing-security
 DownloadListsAs: .gz .xz
 UDebComponents: main contrib non-free
 Components: main contrib non-free
-Architectures: i386 amd64 source
+Architectures: i386 amd64 arm64 source
 FilterList: install ignorepackages.list
-FilterFormula: $Source (!=linux),$Source (!=linux-signed-amd64),$Source (!=linux-signed-i386)
+FilterFormula: $Source (!=linux),$Source (!=linux-signed-amd64),$Source (!=linux-signed-i386),$Source (!=linux-signed-arm64)

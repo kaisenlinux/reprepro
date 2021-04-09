@@ -1,6 +1,5 @@
 adduser						deinstall
 base-files					deinstall
-cron						deinstall
 desktop-base					deinstall
 debootstrap					deinstall
 debootstrap-udeb				deinstall
@@ -87,3 +86,15 @@ py-cpuinfo					deinstall
 python3-cpuinfo					deinstall
 python3-sentry-sdk				deinstall
 vpcs						deinstall
+plymouth					deinstall
+libplymouth-dev					deinstall
+libplymouth5					deinstall
+plymouth-label					deinstall
+plymouth-themes					deinstall
+plymouth-x11					deinstall
+python-cpuinfo					deinstall
+sentry-python					deinstall
+partman-btrfs					deinstall
+netcfg						deinstall
+netcfg-static					deinstall
+btrbk						deinstall
