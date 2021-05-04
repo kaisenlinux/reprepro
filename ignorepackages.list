@@ -61,9 +61,7 @@ grub-theme-starfield				deinstall
 grub-xen					deinstall
 grub-xen-bin					deinstall
 grub-xen-dbg					deinstall
-grub-xen-host					deinstall			
-choose-mirror					deinstall
-choose-mirror-bin				deinstall
+grub-xen-host					deinstall
 apt-setup					deinstall
 apt-setup-udeb					deinstall
 apt-cdrom-setup					deinstall
@@ -98,3 +96,10 @@ partman-btrfs					deinstall
 netcfg						deinstall
 netcfg-static					deinstall
 btrbk						deinstall
+live-installer					deinstall
+download-installer				deinstall
+net-retriever					deinstall
+simple-cdd					deinstall
+python3-simple-cdd				deinstall
+simple-cdd-profiles				deinstall
+debian-cd					deinstall
