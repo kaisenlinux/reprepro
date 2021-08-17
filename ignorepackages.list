@@ -99,7 +99,10 @@ btrbk						deinstall
 live-installer					deinstall
 download-installer				deinstall
 net-retriever					deinstall
+debian-cd					deinstall
+tasksel						deinstall
+tasksel-data					deinstall
 simple-cdd					deinstall
 python3-simple-cdd				deinstall
 simple-cdd-profiles				deinstall
-debian-cd					deinstall
+exfat-utils					deinstall

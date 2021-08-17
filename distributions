@@ -60,18 +60,3 @@ UDebIndices: Packages . .gz
 Contents:
 Description: Kaisen Linux Testing Environment 
 SignWith: 018D0A59B75A9CD8
-
-Origin: Kaisen Linux Rolling Snapshot
-Label: Kaisen Linux Rolling Snapshot
-Suite: kaisen-rolling-snapshot
-Codename: kaisen-rolling-snapshot
-Version: snapshot
-Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
-DscIndices: Sources Release .gz
-DebIndices: Packages Release . .gz
-UDebIndices: Packages . .gz
-Contents:
-Description: Kaisen Linux Rolling Snapshot
-SignWith: 018D0A59B75A9CD8
