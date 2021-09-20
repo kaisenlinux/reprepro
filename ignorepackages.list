@@ -106,3 +106,7 @@ simple-cdd					deinstall
 python3-simple-cdd				deinstall
 simple-cdd-profiles				deinstall
 exfat-utils					deinstall
+aws-sdk-go					deinstall
+golang-github-aws-aws-sdk-go-dev		deinstall
+terraform					deinstall
+ctop						deinstall
