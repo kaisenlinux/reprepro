@@ -2,10 +2,10 @@
 
 set -e
 
-#Pour la suppression de paquets en dehors du noyau Linux qui est versionné différemment des autres logiciels,
-#Privilégier une FilterList dans le fichier conf/updates.
+#Mettre à jour le miroir Debian
+reprepro -Vb /home/kaisen/deb/ --noskipold --export=never update
 
-#Mettre à jour le référentiel de Debian
-reprepro -Vb /home/kaisen/deb/ update
-#Charger les paquets de Kaisen depuis le référentiel de développement (kaisen-devel)
-reprepro -Vb /home/kaisen/deb pull kaisen-rolling
+#Charger les paquets de packages vers devel. De devel vers rolling. De rolling-snapshot vers rolling.
+reprepro -Vb /home/kaisen/deb pull
+reprepro -Vb /home/kaisen/deb pull
+reprepro -Vb /home/kaisen/deb pull

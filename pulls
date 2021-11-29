@@ -1,5 +1,15 @@
+#Pour le pull de Prod vers Snapshot, le faire à chaque release.
+#Purger le dépôt snapshot, vérifier que les paquets de la distrib
+#soient bien en prod et refaire le snapshot pour le repull.
+
 Name: PackagesToDevel
 From: kaisen-packages
 
 Name: DevelToProd
 From: kaisen-devel
+
+Name: SnapshotToProd
+From: kaisen-rolling-snapshot
+
+Name: ProdToSnapshot
+From: kaisen-rolling
