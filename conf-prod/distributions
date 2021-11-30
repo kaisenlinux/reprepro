@@ -1,9 +1,8 @@
-Origin: Kaisen Linux Rolling
-Label: Kaisen Linux Rolling
-Suite: kaisen-rolling
-Codename: kaisen-rolling
-Version: rolling
-Update: - testing testing-updates testing-security
+Origin: Kaisen Linux Testing
+Label: Kaisen Linux Testing
+Suite: kaisen-testing
+Codename: kaisen-testing
+Version: testing
 Architectures: i386 amd64 arm64 source
 Components: main contrib non-free
 UDebComponents: main contrib non-free
@@ -11,8 +10,22 @@ DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
 Contents:
-Pull: DevelToProd SnapshotToProd
-Description: The official APT repository for Kaisen Linux Rolling
+Description: Kaisen Linux Testing Environment
+SignWith: 018D0A59B75A9CD8
+
+Origin: Kaisen Linux Packages
+Label: Kaisen Linux Packages
+Suite: kaisen-packages
+Codename: kaisen-packages
+Version: packages
+Architectures: i386 amd64 arm64 source
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+DscIndices: Sources Release .gz
+DebIndices: Packages Release . .gz
+UDebIndices: Packages . .gz
+Contents:
+Description: All forks/devel packages for Kaisen Linux
 SignWith: 018D0A59B75A9CD8
 
 Origin: Kaisen Linux Devel
@@ -31,37 +44,6 @@ Pull: PackagesToDevel
 Description: Use as developement environment
 SignWith: 018D0A59B75A9CD8
 
-Origin: Kaisen Linux Packages
-Label: Kaisen Linux Packages
-Suite: kaisen-packages
-Codename: kaisen-packages
-Version: packages
-Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
-DscIndices: Sources Release .gz
-DebIndices: Packages Release . .gz
-UDebIndices: Packages . .gz
-Contents:
-Description: All forks/devel packages for Kaisen Linux
-SignWith: 018D0A59B75A9CD8
-
-Origin: Kaisen Linux Testing
-Label: Kaisen Linux Testing
-Suite: kaisen-testing
-Codename: kaisen-testing
-Version: testing
-Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
-DscIndices: Sources Release .gz
-DebIndices: Packages Release . .gz
-UDebIndices: Packages . .gz
-Contents:
-Description: Kaisen Linux Testing Environment 
-SignWith: 018D0A59B75A9CD8
-
-
 Origin: Kaisen Linux Rolling Snapshot
 Label: Kaisen Linux Rolling Snapshot
 Suite: kaisen-rolling-snapshot
@@ -76,4 +58,21 @@ UDebIndices: Packages . .gz
 Contents:
 #Pull: ProdToSnapshot
 Description: Kaisen Linux Rolling Snapshot
+SignWith: 018D0A59B75A9CD8
+
+Origin: Kaisen Linux Rolling
+Label: Kaisen Linux Rolling
+Suite: kaisen-rolling
+Codename: kaisen-rolling
+Version: rolling
+Update: - testing testing-updates testing-security
+Architectures: i386 amd64 arm64 source
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+DscIndices: Sources Release .gz
+DebIndices: Packages Release . .gz
+UDebIndices: Packages . .gz
+Contents:
+Pull: DevelToProd SnapshotToProd
+Description: The official APT repository for Kaisen Linux Rolling
 SignWith: 018D0A59B75A9CD8

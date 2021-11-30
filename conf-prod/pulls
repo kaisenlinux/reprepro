@@ -1,0 +1,11 @@
+Name: PackagesToDevel
+From: kaisen-packages
+
+Name: DevelToProd
+From: kaisen-devel
+
+Name: SnapshotToProd
+From: kaisen-rolling-snapshot
+
+Name: ProdToSnapshot
+From: kaisen-rolling

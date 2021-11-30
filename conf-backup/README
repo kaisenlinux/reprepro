@@ -1,0 +1,7 @@
+## Repositories of backup
+
+This repository is simply a complete backup of all Kaisen repositories. It provides backup or relay in case of failure of the initial repository. 
+
+The conf folder will become conf.backup and the conf.orig folder will become conf. 
+
+To make it a backup again, the conf will become conf.orig and the conf.backup will become conf.

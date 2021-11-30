@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+#Update Debian mirror
+reprepro -Vb /home/kaisen/deb/ --noskipold --export=never update
+
+#Pull kaisen-packages packages to kaisen-devel. Pull kaisen-devel packages to kaisen-rolling. Pull kaisen-rolling-snapshot packages to kaisen-rolling.
+reprepro -Vb /home/kaisen/deb pull

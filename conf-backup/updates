@@ -1,0 +1,39 @@
+Name: kaisen-rolling
+Method: https://deb.kaisenlinux.org/
+Suite: kaisen-rolling
+DownloadListsAs: .gz .xz
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+Architectures: i386 amd64 arm64 source
+
+Name: kaisen-devel
+Method: https://deb.kaisenlinux.org/
+Suite: kaisen-devel
+DownloadListsAs: .gz .xz
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+Architectures: i386 amd64 arm64 source
+
+Name: kaisen-packages
+Method: https://deb.kaisenlinux.org/
+Suite: kaisen-packages
+DownloadListsAs: .gz .xz
+UDebComponents: main contrib non-free
+Components: main contrib non-free
+Architectures: i386 amd64 arm64 source
+
+Name: kaisen-testing
+Method: https://deb.kaisenlinux.org/
+Suite: kaisen-testing
+DownloadListsAs: .gz .xz
+UDebComponents: main contrib non-free
+Components: main contrib non-free
+Architectures: i386 amd64 arm64 source
+
+Name: kaisen-rolling-snapshot
+Method: https://deb.kaisenlinux.org/
+Suite: kaisen-rolling-snapshot
+DownloadListsAs: .gz .xz
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+Architectures: i386 amd64 arm64 source
