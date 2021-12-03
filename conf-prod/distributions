@@ -13,6 +13,22 @@ Contents:
 Description: Kaisen Linux Testing Environment
 SignWith: 018D0A59B75A9CD8
 
+Origin: Kaisen Linux Rolling Snapshot
+Label: Kaisen Linux Rolling Snapshot
+Suite: kaisen-rolling-snapshot
+Codename: kaisen-rolling-snapshot
+Version: kaisen-rolling-snapshot
+Architectures: i386 amd64 arm64 source
+Components: main contrib non-free
+UDebComponents: main contrib non-free
+DscIndices: Sources Release .gz
+DebIndices: Packages Release . .gz
+UDebIndices: Packages . .gz
+Contents:
+#Pull: ProdToSnapshot
+Description: Kaisen Linux Rolling Snapshot
+SignWith: 018D0A59B75A9CD8
+
 Origin: Kaisen Linux Packages
 Label: Kaisen Linux Packages
 Suite: kaisen-packages
@@ -44,22 +60,6 @@ Pull: PackagesToDevel
 Description: Use as developement environment
 SignWith: 018D0A59B75A9CD8
 
-Origin: Kaisen Linux Rolling Snapshot
-Label: Kaisen Linux Rolling Snapshot
-Suite: kaisen-rolling-snapshot
-Codename: kaisen-rolling-snapshot
-Version: kaisen-rolling-snapshot
-Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
-DscIndices: Sources Release .gz
-DebIndices: Packages Release . .gz
-UDebIndices: Packages . .gz
-Contents:
-#Pull: ProdToSnapshot
-Description: Kaisen Linux Rolling Snapshot
-SignWith: 018D0A59B75A9CD8
-
 Origin: Kaisen Linux Rolling
 Label: Kaisen Linux Rolling
 Suite: kaisen-rolling
@@ -73,6 +73,6 @@ DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
 Contents:
-Pull: DevelToProd SnapshotToProd
+Pull: SnapshotToProd DevelToProd
 Description: The official APT repository for Kaisen Linux Rolling
 SignWith: 018D0A59B75A9CD8
