@@ -73,6 +73,6 @@ DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
 Contents:
-Pull: SnapshotToProd DevelToProd
+Pull: SnapshotToProd PackagesToProd DevelToProd
 Description: The official APT repository for Kaisen Linux Rolling
 SignWith: 018D0A59B75A9CD8

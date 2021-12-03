@@ -4,6 +4,9 @@ From: kaisen-packages
 Name: DevelToProd
 From: kaisen-devel
 
+Name: PackagesToProd
+From: kaisen-packages
+
 Name: SnapshotToProd
 From: kaisen-rolling-snapshot
 
