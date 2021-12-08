@@ -131,3 +131,4 @@ neofetch					deinstall
 qbittorrent					deinstall
 qbittorrent-dbg					deinstall
 qbittorrent-nox					deinstall
+virtualbox-guest-additions-iso                  deinstall
