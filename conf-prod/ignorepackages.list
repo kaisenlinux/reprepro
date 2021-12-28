@@ -132,3 +132,7 @@ qbittorrent					deinstall
 qbittorrent-dbg					deinstall
 qbittorrent-nox					deinstall
 virtualbox-guest-additions-iso                  deinstall
+testdisk                                        deinstall
+testdisk-dbg                                    deinstall
+stressapptest                                   deinstall
+stressapptest-dbgsym                            deinstall
