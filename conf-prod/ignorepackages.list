@@ -137,3 +137,4 @@ testdisk-dbg                                    deinstall
 stressapptest                                   deinstall
 stressapptest-dbgsym                            deinstall
 gtkstresstesting				deinstall
+packer						deinstall
