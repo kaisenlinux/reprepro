@@ -1,4 +1,4 @@
-adduser						deinstall
+#Definitive excludes
 base-files					deinstall
 desktop-base					deinstall
 debootstrap					deinstall
@@ -131,10 +131,18 @@ neofetch					deinstall
 qbittorrent					deinstall
 qbittorrent-dbg					deinstall
 qbittorrent-nox					deinstall
-virtualbox-guest-additions-iso                  deinstall
-testdisk                                        deinstall
-testdisk-dbg                                    deinstall
-stressapptest                                   deinstall
-stressapptest-dbgsym                            deinstall
+virtualbox-guest-additions-iso			deinstall
+testdisk					deinstall
+testdisk-dbg					deinstall
+stressapptest					deinstall
+stressapptest-dbgsym				deinstall
 gtkstresstesting				deinstall
 packer						deinstall
+tfsec						deinstall
+kind						deinstall
+kubectx						deinstall
+kustomize					deinstall
+kyverno						deinstall
+
+#Temporary excludes
+drf-yasg-nonfree				deinstall
