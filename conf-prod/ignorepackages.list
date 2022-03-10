@@ -143,8 +143,9 @@ kind						deinstall
 kubectx						deinstall
 kustomize					deinstall
 kyverno						deinstall
-base-installer                                  deinstall
-bootstrap-base                                  deinstall
+base-installer					deinstall
+bootstrap-base					deinstall
+pdk						deinstall
 
 #Temporary excludes
 drf-yasg-nonfree				deinstall
