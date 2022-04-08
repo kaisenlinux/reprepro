@@ -139,6 +139,7 @@ kyverno						deinstall
 base-installer					deinstall
 bootstrap-base					deinstall
 pdk						deinstall
+bettercap					deinstall
 
 #Temporary excludes
 drf-yasg-nonfree				deinstall
