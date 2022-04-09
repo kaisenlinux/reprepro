@@ -2,7 +2,6 @@
 python3-sentry-sdk				deinstall
 sentry-python					deinstall
 terraform					deinstall
-helm						deinstall
 kubernetes					deinstall
 kubernetes-client				deinstall
 kubernetes-node					deinstall
