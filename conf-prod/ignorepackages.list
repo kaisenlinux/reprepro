@@ -64,6 +64,7 @@ bettercap-ui					deinstall
 ddrescue					deinstall
 bloodhound					deinstall
 hfsprescue					deinstall
+velero						deinstall
 
 #Temporary excludes
 drf-yasg-nonfree				deinstall
