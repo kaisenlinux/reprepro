@@ -23,12 +23,13 @@ Commands to do this in order:
 
 - Comment out the entire kaisen-rolling-snapshot repository in the distribution file 
 - Run the command: reprepro -Vb . --delete clearvanished 
-- In the distributions file, uncomment all the lines of the snapshot repository 
+- In the distributions file, uncomment all the lines except the Pull: line of the kaisen-rolling-snapshot repository 
 - Do an rm -rf on dists/kaisen-rolling-snapshot 
 - Run the command: reprepro -Vb . export kaisen-rolling-snapshot 
 - Run the command: reprepro -Vb . --noskipold update to update the kaisen-rolling repository 
 - Run the command: reprepro -Vb . pull 
 - Reinject all desired packages on the kaisen-rolling repository 
+- Uncomment the Pull: line on the kaisen-rolling-snapshot 
 - Rerun the command: reprepro -Vb . pull 
 - Finally, comment out the Pull: line on the kaisen-rolling-snapshot repository to keep deleted or updated packages on the mirror so that the snapshot is not modified 
 
