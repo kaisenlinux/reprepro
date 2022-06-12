@@ -26,6 +26,7 @@ Commands to do this in order:
 - In the distributions file, uncomment all the lines of the snapshot repository 
 - Do an rm -rf on dists/kaisen-rolling-snapshot 
 - Run the command: reprepro -Vb . export kaisen-rolling-snapshot 
+- Run the command: reprepro -Vb . --noskipold update to update the kaisen-rolling repository 
 - Reinject all desired packages on the kaisen-rolling repository 
 - Run the command: reprepro -Vb . pull
 - Finally, comment out the Pull: line on the kaisen-rolling-snapshot repository to keep deleted or updated packages on the mirror so that the snapshot is not modified 
