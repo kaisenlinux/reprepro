@@ -31,7 +31,7 @@ Commands to do this in order:
 - Reinject all desired packages on the kaisen-rolling repository 
 - Uncomment the Pull: line on the kaisen-rolling-snapshot 
 - Rerun the command: reprepro -Vb . pull 
-- Finally, comment out the Pull: line on the kaisen-rolling-snapshot repository to keep deleted or updated packages on the mirror so that the snapshot is not modified 
+- Finally, comment out the Pull: line and keep uncomment others lines on the kaisen-rolling-snapshot repository to keep deleted or updated packages on the mirror so that the snapshot is not modified 
 
 ## The repositories
 
