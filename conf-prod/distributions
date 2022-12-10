@@ -11,7 +11,7 @@ DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
 Contents:
 Description: Kaisen Linux Testing Environment
-SignWith: 018D0A59B75A9CD8
+SignWith: DEAA7C2CAFC8EEAE
 
 Origin: Kaisen Linux Rolling Snapshot
 Label: Kaisen Linux Rolling Snapshot
@@ -27,7 +27,7 @@ UDebIndices: Packages . .gz
 Contents:
 #Pull: ProdToSnapshot
 Description: Kaisen Linux Rolling Snapshot
-SignWith: 018D0A59B75A9CD8
+SignWith: DEAA7C2CAFC8EEAE
 
 Origin: Kaisen Linux Packages
 Label: Kaisen Linux Packages
@@ -42,7 +42,7 @@ DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
 Contents:
 Description: All forks/devel packages for Kaisen Linux
-SignWith: 018D0A59B75A9CD8
+SignWith: DEAA7C2CAFC8EEAE
 
 Origin: Kaisen Linux Devel
 Label: Kaisen Linux Devel
@@ -58,7 +58,7 @@ UDebIndices: Packages . .gz
 Contents:
 Pull: PackagesToDevel
 Description: Use as developement environment
-SignWith: 018D0A59B75A9CD8
+SignWith: DEAA7C2CAFC8EEAE
 
 Origin: Kaisen Linux Rolling
 Label: Kaisen Linux Rolling
@@ -75,4 +75,4 @@ UDebIndices: Packages . .gz
 Contents:
 Pull: SnapshotToProd PackagesToProd DevelToProd
 Description: The official APT repository for Kaisen Linux Rolling
-SignWith: 018D0A59B75A9CD8
+SignWith: DEAA7C2CAFC8EEAE
