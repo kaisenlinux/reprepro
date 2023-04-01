@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -e
-
-#Update Debian mirror
-reprepro -Vb /home/kaisen/deb/ --noskipold update

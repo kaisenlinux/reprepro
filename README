@@ -1,7 +1,63 @@
-##Prod and backup
+#Personals notes
 
-The configurations of the production servers (active servers providing packages from https://deb.kaisenlinux.org) are in the conf-prod folder. 
+##Useful reprepro commands
 
-The configurations of the backup servers (they are backups of all Kaisen repositories and take over in case of failure on the main servers) are in the conf-backup folder. 
+Verbose mode: -V 
+Update dists : reprepro -Vb . export 
+Update repositories : reprepro -Vb . update 
+Pull packages from one repository to another according to the pull file : reprepro -Vb . pull 
+Remove a package : reprepro -Vb . remove dists package (example reprepro -Vb . remove kaisen-rolling kaisen-mate) 
+Add a package with its sources : reprepro -Vb . include dists package (example reprepro -Vb . include kaisen-rolling *.changes) 
+Add a package alone : reprepro -Vb . includedeb dists package (example reprepro -Vb . includedeb kaisen-rolling *.deb) 
+Add sources only : reprepro -Vb . includedc dists package (example reprepro -Vb . includedc kaisen-rolling *.dsc) 
 
-Each folder contains a README providing information about the functioning of the repositories (pull rules, updates, their roles...).
+##Update the snapshot repository
+
+The snapshot repository is a backup of all available packages of the distribution before each release. It allows to re-inject packages into the rolling repository from this repository if packages are removed from the mirror because Debian has removed them. 
+This is done with a reprepro pull. If the pre-integrated packages are removed at each mirror update, they will be retrieved from the snapshot so that no packages are missing when installing the distribution with the NETINST ISO. 
+Each update of the snapshot repository will be done before each new release, in order to purge the packages removed by Debian to keep a reasonable size on the repository, while ensuring that all the software pre-installed in Kaisen (or available for installation via NETINST) is present. 
+
+Before recreating the snapshot repository, make sure that all packages included in Kaisen are present in kaisen-rolling.
+
+Commands to do this in order:
+
+- Comment out the entire kaisen-rolling-snapshot repository in the distribution file 
+- Run the command: reprepro -Vb . --delete clearvanished 
+- In the distributions file, uncomment all the lines except the Pull: line of the kaisen-rolling-snapshot repository 
+- Do an rm -rf on dists/kaisen-rolling-snapshot 
+- Run the command: reprepro -Vb . export kaisen-rolling-snapshot 
+- Run the command: reprepro -Vb . --noskipold update to update the kaisen-rolling repository 
+- Run the command: reprepro -Vb . pull 
+- Reinject all desired packages on the kaisen-rolling repository 
+- Uncomment the Pull: line on the kaisen-rolling-snapshot 
+- Rerun the command: reprepro -Vb . pull 
+- Finally, comment out the Pull: line and keep uncomment others lines on the kaisen-rolling-snapshot repository to keep deleted or updated packages on the mirror so that the snapshot is not modified 
+
+## The repositories
+
+List of repositories : 
+
+- kaisen-rolling = Debian mirror, updated every 3 hours 
+- kaisen-devel = packages not integrated in Debian by default, or from other sources, such as GitHub and integrated in Kaisen 
+- kaisen-packages = packages created or forked for Kaisen 
+- kaisen-testing = packages under development, not considered stable for production use 
+- kaisen-rolling-snapshot = backup of all kaisen-rolling packages before each release, in order to keep all packages in the distribution 
+
+## Repository pull rules
+
+A pull allows to push the content of a dist (e.g. kaisen-devel) to another (e.g. kaisen-rolling). This allows to reintegrate packages that have been deferred or removed because they are not present in Debian during mirror upgrades.  
+The pull rules are as follows: 
+
+- Packages from the kaisen-packages repository are pushed to kaisen-devel in order to transmit updates of packages developed or forked for Kaisen 
+- Packages from the kaisen-devel repository, once the kaisen-packages have been integrated, are pushed to kaisen-rolling for the reinjection of the Kaisen packages into the "production" repository 
+- Packages from the kaisen-rolling-snapshot repository are pushed to kaisen-rolling for reinjection of packages removed by Debian, which can be installed via NETINST 
+
+## Keeping software in repositories
+
+If a package is considered too old, or is no longer maintained (sometimes the software is no longer maintained by the developer), it can be removed from Kaisen. If this is the case, the metapackages of the kaisen-tools source package will be updated to no longer be installed by default. 
+If a package is considered obsolete, it will also be removed from kaisen-rolling-snapshot, which will also potentially remove it from kaisen-rolling if Debian removes it from its repositories. It can still be installed, either via an external repository, or a .deb from another source. 
+
+## Package exclusions in the mirror
+
+Exclusions are done via the FilterList and FilterFormula commands in the updates file. This allows when updating the mirror not to download the packages mentioned in these lists. This allows for example not to re-download packages that have been forked, but the forks have not been updated on Kaisen, because only the most recent version of a software is kept. 
+This limits the breakage of the Kaisen environment.
