@@ -65,6 +65,8 @@ ddrescue					deinstall
 bloodhound					deinstall
 hfsprescue					deinstall
 velero						deinstall
+sedutil						deinstall
+sedutil-dbgsym					deinstall
 
 #Temporary excludes
 drf-yasg-nonfree				deinstall
