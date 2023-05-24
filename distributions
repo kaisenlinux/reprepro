@@ -4,8 +4,8 @@ Suite: kaisen-testing
 Codename: kaisen-testing
 Version: testing
 Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
+Components: main contrib non-free non-free-firmware
+UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
@@ -19,8 +19,8 @@ Suite: kaisen-rolling-snapshot
 Codename: kaisen-rolling-snapshot
 Version: kaisen-rolling-snapshot
 Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
+Components: main contrib non-free non-free-firmware
+UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
@@ -35,8 +35,8 @@ Suite: kaisen-packages
 Codename: kaisen-packages
 Version: packages
 Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
+Components: main contrib non-free non-free-firmware
+UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
@@ -50,8 +50,8 @@ Suite: kaisen-devel
 Codename: kaisen-devel
 Version: devel
 Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
+Components: main contrib non-free non-free-firmware
+UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
@@ -67,8 +67,8 @@ Codename: kaisen-rolling
 Version: rolling
 Update: - testing testing-updates testing-security
 Architectures: i386 amd64 arm64 source
-Components: main contrib non-free
-UDebComponents: main contrib non-free
+Components: main contrib non-free non-free-firmware
+UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
 DebIndices: Packages Release . .gz
 UDebIndices: Packages . .gz
