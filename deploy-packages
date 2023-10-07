@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+for packages in `ls -1 ../incoming/*.changes`;do reprepro -Vb ../ include kaisen-packages $packages;done

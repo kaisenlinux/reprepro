@@ -58,7 +58,6 @@ fred-reports					deinstall
 wxfixboot					deinstall
 woeusb						deinstall
 woeusb-ng					deinstall
-apt-btrfs-snapshot				deinstall
 bettercap-caplets				deinstall
 bettercap-ui					deinstall
 ddrescue					deinstall
