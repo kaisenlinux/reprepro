@@ -3,7 +3,7 @@ Label: Kaisen Linux Testing
 Suite: kaisen-testing
 Codename: kaisen-testing
 Version: testing
-Architectures: i386 amd64 arm64 source
+Architectures: amd64 arm64 source
 Components: main contrib non-free non-free-firmware
 UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
@@ -18,7 +18,7 @@ Label: Kaisen Linux Rolling Snapshot
 Suite: kaisen-rolling-snapshot
 Codename: kaisen-rolling-snapshot
 Version: kaisen-rolling-snapshot
-Architectures: i386 amd64 arm64 source
+Architectures: amd64 arm64 source
 Components: main contrib non-free non-free-firmware
 UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
@@ -34,7 +34,7 @@ Label: Kaisen Linux Packages
 Suite: kaisen-packages
 Codename: kaisen-packages
 Version: packages
-Architectures: i386 amd64 arm64 source
+Architectures: amd64 arm64 source
 Components: main contrib non-free non-free-firmware
 UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
@@ -49,7 +49,7 @@ Label: Kaisen Linux Devel
 Suite: kaisen-devel
 Codename: kaisen-devel
 Version: devel
-Architectures: i386 amd64 arm64 source
+Architectures: amd64 arm64 source
 Components: main contrib non-free non-free-firmware
 UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
@@ -66,7 +66,7 @@ Suite: kaisen-rolling
 Codename: kaisen-rolling
 Version: rolling
 Update: - testing testing-updates testing-security
-Architectures: i386 amd64 arm64 source
+Architectures: amd64 arm64 source
 Components: main contrib non-free non-free-firmware
 UDebComponents: main contrib non-free non-free-firmware
 DscIndices: Sources Release .gz
