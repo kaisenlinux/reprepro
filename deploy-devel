@@ -4,3 +4,4 @@ set -e
 
 for sources in `ls -1 ../incoming/*.dsc`;do reprepro -Vb ../ includedsc kaisen-devel $sources;done
 for packages in `ls -1 ../incoming/*.deb`;do reprepro -Vb ../ includedeb kaisen-devel $packages;done
+for upackages in `ls -1 ../incoming/*.udeb`;do reprepro -Vb ../ includeudeb kaisen-devel $upackages;done

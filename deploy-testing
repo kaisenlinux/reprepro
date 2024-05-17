@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+for packages in `ls -1 ../incoming/*.changes`;do reprepro --ignore=wrongdistribution -Vb ../ include kaisen-testing $packages;done
