@@ -12,6 +12,3 @@ reprepro -Vb /srv/deb/ --noskipold --export=never update
 
 #Pull kaisen-rolling-snapshot packages to kaisen-rolling. Pull kaisen-packages packages to kaisen-devel. Pull kaisen-devel packages to kaisen-rolling.
 reprepro -Vb /srv/deb pull
-
-#Update the SELinux context
-chcon -Rt httpd_sys_content_t /srv/deb

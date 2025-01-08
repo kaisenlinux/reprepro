@@ -3,6 +3,3 @@
 set -e
 
 for packages in `ls -1 ../incoming/*.changes`;do reprepro -Vb ../ include kaisen-packages $packages;done
-
-#Update the SELinux context
-chcon -Rt httpd_sys_content_t /srv/deb
