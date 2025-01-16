@@ -32,8 +32,6 @@ k9s						deinstall
 k6						deinstall
 eksctl						deinstall
 dupeguru					deinstall
-sslscan						deinstall
-ssldump						deinstall
 qt-fsarchiver					deinstall
 veracrypt					deinstall
 gns3						deinstall
@@ -66,6 +64,3 @@ hfsprescue					deinstall
 velero						deinstall
 sedutil						deinstall
 sedutil-dbgsym					deinstall
-
-#Temporary excludes
-#drf-yasg-nonfree				deinstall
