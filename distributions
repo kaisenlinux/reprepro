@@ -65,7 +65,7 @@ Label: Kaisen Linux Rolling
 Suite: kaisen-rolling
 Codename: kaisen-rolling
 Version: rolling
-Update: - testing testing-updates testing-security
+Update: - trixie trixie-updates trixie-security
 Architectures: amd64 arm64 source
 Components: main contrib non-free non-free-firmware
 UDebComponents: main contrib non-free non-free-firmware
