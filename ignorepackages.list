@@ -31,7 +31,6 @@ minikube					deinstall
 k9s						deinstall
 k6						deinstall
 eksctl						deinstall
-dupeguru					deinstall
 qt-fsarchiver					deinstall
 veracrypt					deinstall
 gns3						deinstall
